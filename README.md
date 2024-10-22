@@ -9,7 +9,6 @@ Ensure the following are installed:
         Node.js and npm (for Angular)
         PostgreSQL (for the database)
 
-Setup
 ### 1. PostgreSQL Database
 
 Start PostgreSQL and create a database:
