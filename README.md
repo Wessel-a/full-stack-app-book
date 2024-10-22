@@ -5,26 +5,26 @@ Prerequisites
 
 Ensure the following are installed:
 
-    Java 17+ (for Spring Boot)
-    Node.js and npm (for Angular)
-    PostgreSQL (for the database)
+        Java 17+ (for Spring Boot)
+        Node.js and npm (for Angular)
+        PostgreSQL (for the database)
 
 Setup
 1. PostgreSQL Database
 
     Start PostgreSQL and create a database:
 
-    psql -U postgres
-    CREATE DATABASE "last-app";
+        psql -U postgres
+        CREATE DATABASE "last-app";
 
 Update application.properties in src/main/resources:
 
 properties
 
-    spring.datasource.url=jdbc:postgresql://localhost:5432/last-app
-    spring.datasource.username=postgres
-    spring.datasource.password=password
-    spring.jpa.hibernate.ddl-auto=update
+        spring.datasource.url=jdbc:postgresql://localhost:5432/last-app
+        spring.datasource.username=postgres
+        spring.datasource.password=password
+        spring.jpa.hibernate.ddl-auto=update
 
 2. Spring Boot Backend
 
@@ -32,8 +32,8 @@ properties
 
     Install dependencies and run the application:
 
-    ./mvnw clean install
-    ./mvnw spring-boot:run
+        ./mvnw clean install
+        ./mvnw spring-boot:run
 
     The backend will run at http://localhost:8080.
 
@@ -42,15 +42,15 @@ properties
     Go to the Angular project directory.
 
     Install dependencies and start the frontend:
-
-    npm install
-    ng serve
+    
+        npm install
+        ng serve
 
     The frontend will run at http://localhost:4200 and interact with the backend API (http://localhost:8080/api/book/list).
 
 Running the Application
 
-    Start PostgreSQL and ensure the last-app database is running.
-    Run the Spring Boot backend: mvn spring-boot:run.
-    Run the Angular frontend: ng serve.
-    Access the app at http://localhost:4200.
+        Start PostgreSQL and ensure the last-app database is running.
+        Run the Spring Boot backend: mvn spring-boot:run.
+        Run the Angular frontend: ng serve.
+        Access the app at http://localhost:4200.
