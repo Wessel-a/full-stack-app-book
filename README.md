@@ -1,5 +1,4 @@
-Here's a more compact version of the README:
-Last-App Project
+full-stack-app-book Project
 
 This project is a full-stack application using Spring Boot (backend) and Angular (frontend) with PostgreSQL as the database.
 Prerequisites
