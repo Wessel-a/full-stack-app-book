@@ -1,4 +1,4 @@
-### full-stack-app-book Project
+## Full-stack-app-book Project
 
 This project is a full-stack application using Spring Boot (backend) and Angular (frontend) with PostgreSQL as the database.
 Prerequisites
@@ -10,9 +10,9 @@ Ensure the following are installed:
         PostgreSQL (for the database)
 
 Setup
-1. PostgreSQL Database
+### 1. PostgreSQL Database
 
-    Start PostgreSQL and create a database:
+Start PostgreSQL and create a database:
 
         psql -U postgres
         CREATE DATABASE "last-app";
@@ -26,29 +26,29 @@ properties
         spring.datasource.password=password
         spring.jpa.hibernate.ddl-auto=update
 
-2. Spring Boot Backend
+### 2. Spring Boot Backend
 
-    Navigate to the Spring Boot project directory.
+Navigate to the Spring Boot project directory.
 
-    Install dependencies and run the application:
-
+Install dependencies and run the application:
+        
         ./mvnw clean install
         ./mvnw spring-boot:run
 
-    The backend will run at http://localhost:8080.
+The backend will run at http://localhost:8080.
 
-3. Angular Frontend
+### 3. Angular Frontend
 
-    Go to the Angular project directory.
+Go to the Angular project directory.
 
-    Install dependencies and start the frontend:
+Install dependencies and start the frontend:
     
         npm install
         ng serve
 
-    The frontend will run at http://localhost:4200 and interact with the backend API (http://localhost:8080/api/book/list).
+The frontend will run at http://localhost:4200 and interact with the backend API (http://localhost:8080/api/book/list).
 
-Running the Application
+### Running the Application
 
         Start PostgreSQL and ensure the last-app database is running.
         Run the Spring Boot backend: mvn spring-boot:run.
