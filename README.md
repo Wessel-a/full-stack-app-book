@@ -14,10 +14,8 @@ Setup
 
     Start PostgreSQL and create a database:
 
-    bash
-
-psql -U postgres
-CREATE DATABASE "last-app";
+    psql -U postgres
+    CREATE DATABASE "last-app";
 
 Update application.properties in src/main/resources:
 
@@ -34,8 +32,6 @@ properties
 
     Install dependencies and run the application:
 
-    bash
-
     ./mvnw clean install
     ./mvnw spring-boot:run
 
@@ -46,8 +42,6 @@ properties
     Go to the Angular project directory.
 
     Install dependencies and start the frontend:
-
-    bash
 
     npm install
     ng serve
